@@ -159,6 +159,24 @@ button {
     padding: 5px 10px;
 }
 
+.card {
+    border: none;
+    border-radius: 20px;
+
+    line-height: 2rem;
+    text-align: center;
+    color: grey;
+    background-color: white;
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.card>* {
+    padding-top: 20px;
+}
 
 /*#endregion Shared  */
 
@@ -195,12 +213,42 @@ header .fa-bars {
 /*#region Main  */
 
 main {
-    padding-top: 80px;
+    padding-top: 130px;
 }
 
 section:nth-of-type(even) {
     background-color: #9792e4;
 }
+
+/*#region Product Presentation  */
+
+#product-presentation .column {
+    row-gap: 20px;
+}
+
+#product-presentation .card {
+    background-color: #b5ddff;
+    font-weight: bold;
+}
+
+#product-presentation h3 {
+    color: #0084fd;
+}
+
+#product-presentation button {
+    background-color: #0084fd;
+    color: white;
+    font-weight: inherit;
+
+    padding: 10px 50px;
+}
+
+#product-presentation .card:first-child {
+    text-align: left;
+    padding-bottom: 0px;
+}
+
+/*#endregion Product Presentation  */
 
 /*#endregion Main  */
 
@@ -250,6 +298,16 @@ footer {
 
 .debug section {
     min-height: 500px;
+}
+
+.debug .column {
+    min-height: 350px;
+    border: 1px dashed red;
+}
+
+
+.debug .card {
+    height: 100%;
 }
 
 
