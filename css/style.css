@@ -150,6 +150,18 @@ a {
 
 /*#endregion Utilities  */
 
+/*#region Shared  */
+
+button {
+    border: none;
+    border-radius: 20px;
+
+    padding: 5px 10px;
+}
+
+
+/*#endregion Shared  */
+
 /*#region Content */
 
 /*#region Header */
@@ -170,6 +182,13 @@ header img {
     vertical-align: middle;
 }
 
+header .fa-bars {
+    transform: scale(1.5);
+}
+
+.menu ul {
+    display: none;
+}
 
 /*#endregion Header  */
 
@@ -194,9 +213,35 @@ footer {
 
 /*#region Mediaquery  */
 
+
+/* Tablet */
 @media screen and (min-width: 768px) {}
 
-@media screen and (min-width: 1200px) {}
+
+/* Desktop */
+@media screen and (min-width: 1200px) {
+
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .menu i {
+        display: none;
+    }
+
+    .menu {
+        flex-basis: 40%;
+
+    }
+
+    .menu ul {
+        display: flex;
+
+        list-style-type: none;
+    }
+
+}
 
 
 /*#endregion Mediaquery  */
