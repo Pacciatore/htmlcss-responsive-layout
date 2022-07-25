@@ -33,7 +33,7 @@ a {
 
 /* Flexbox utilities */
 
-.column {
+.col {
     display: flex;
     flex-direction: column;
 }
@@ -43,7 +43,7 @@ a {
     flex-direction: row;
 }
 
-.column-reverse {
+.col-reverse {
     display: flex;
     flex-direction: column-reverse;
 }
@@ -152,6 +152,10 @@ a {
 
 /*#region Shared  */
 
+.column {
+    width: 100%;
+}
+
 button {
     border: none;
     border-radius: 20px;
@@ -222,7 +226,11 @@ section:nth-of-type(even) {
 
 /*#region Product Presentation  */
 
-#product-presentation .column {
+#product-presentation {
+    margin-bottom: 50px;
+}
+
+#product-presentation .row {
     row-gap: 20px;
 }
 
@@ -233,6 +241,8 @@ section:nth-of-type(even) {
 
 #product-presentation h3 {
     color: #0084fd;
+
+    font-size: xx-large;
 }
 
 #product-presentation button {
@@ -243,9 +253,15 @@ section:nth-of-type(even) {
     padding: 10px 50px;
 }
 
-#product-presentation .card:first-child {
+#product-presentation .column:first-child>.card {
     text-align: left;
     padding-bottom: 0px;
+}
+
+#product-presentation .card>i {
+    color: #0084fd;
+
+    font-size: 5rem;
 }
 
 /*#endregion Product Presentation  */
