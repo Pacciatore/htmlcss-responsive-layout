@@ -141,3 +141,75 @@ a {
 }
 
 /*#endregion Imported Settings  */
+
+/*#region Utilities  */
+
+.container {
+    padding: 0 20px;
+}
+
+/*#endregion Utilities  */
+
+/*#region Content */
+
+/*#region Header */
+header {
+    background-color: #0084fd;
+    min-height: 80px;
+    line-height: 80px;
+
+    position: fixed;
+}
+
+.menu {
+    color: white;
+}
+
+header .fa-bars,
+header img {
+    vertical-align: middle;
+}
+
+
+/*#endregion Header  */
+
+/*#region Main  */
+
+main {
+    padding-top: 80px;
+}
+
+section:nth-of-type(even) {
+    background-color: #9792e4;
+}
+
+/*#endregion Main  */
+
+footer {
+    background-color: #333333;
+}
+
+
+/*#endregion Content */
+
+/*#region Mediaquery  */
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1200px) {}
+
+
+/*#endregion Mediaquery  */
+
+/*#region DEBUGGER */
+
+.debug section {
+    min-height: 500px;
+}
+
+
+.debug footer {
+    min-height: 160px;
+}
+
+/*#endregion DEBUGGER  */
