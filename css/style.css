@@ -9,6 +9,7 @@
 
 body {
     font-family: 'PT Sans', sans-serif;
+    line-height: 2rem;
 }
 
 /* a-Link reset */
@@ -167,7 +168,6 @@ button {
     border: none;
     border-radius: 20px;
 
-    line-height: 2rem;
     text-align: center;
     color: grey;
     background-color: white;
@@ -267,6 +267,43 @@ section:nth-of-type(even) {
 
 /*#endregion Product Presentation  */
 
+/*#region Strategic Planning  */
+
+#strategic-planning {
+    padding: 100px 0;
+}
+
+.planning-caption {
+    color: white;
+    padding-bottom: 30px;
+}
+
+.planning-caption h2 {
+    padding: 40px 0;
+    font-size: xx-large;
+}
+
+#strategic-planning .card {
+    color: black;
+}
+
+#strategic-planning .card>h3 {
+    font-size: x-large;
+}
+
+#strategic-planning .card>p {
+    font-style: oblique;
+}
+
+#strategic-planning i {
+    background-color: #9792e4;
+    padding: 20px;
+    border: none;
+    border-radius: 50%;
+}
+
+/*#endregion Strategic Planning  */
+
 /*#endregion Main  */
 
 footer {
@@ -282,6 +319,7 @@ footer {
 /* Tablet */
 @media screen and (min-width: 768px) {
 
+    /*#region Product presentation  */
     #product-presentation .column:first-child {
         width: calc(100% / 3 *2);
     }
@@ -298,6 +336,21 @@ footer {
     #product-presentation .card {
         height: 100%;
     }
+
+    /*#endregion Product presentation  */
+
+    /*#region Strategic planning  */
+    #strategic-planning .card {
+        padding: 50px;
+    }
+
+    #strategic-planning h2 {
+        font-size: 72px;
+        padding: 70px 0;
+    }
+
+
+    /*#endregion Strategic planning  */
 
 }
 
@@ -339,6 +392,21 @@ footer {
     }
 
     /*#endregion Product presentation  */
+
+    /*#region Strategic planning  */
+
+    #strategic-planning>.container {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    /* TODO */
+    #strategic-planning h2 {
+        font-size: xx-large;
+    }
+
+    /*#endregion Strategic planning  */
 
 }
 
