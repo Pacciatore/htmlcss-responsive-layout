@@ -219,7 +219,9 @@ img {
 }
 
 #strategic-planning,
-#about-us {
+#testimonials .col,
+#about-us,
+#get-started {
     padding: 100px 0;
 }
 
@@ -346,10 +348,6 @@ section:nth-of-type(even) {
 #testimonials {
     text-align: center;
     padding: 0 20px;
-}
-
-#testimonials .col {
-    padding: 100px 0;
 }
 
 #testimonials .column {
@@ -481,6 +479,54 @@ section:nth-of-type(even) {
 }
 
 /*#endregion About Us  */
+
+/*#region Get Started  */
+
+#get-started {
+    text-align: center;
+    color: white;
+}
+
+#get-started .container>* {
+    padding: 10px 0;
+}
+
+#get-started h3 {
+    font-weight: lighter;
+    opacity: 0.8;
+}
+
+#get-started p:first-of-type {
+    font-weight: bold;
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+}
+
+#get-started p:nth-of-type(2) {
+    color: #fbc060;
+    padding: 30px 0;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#get-started button {
+    color: var(--even-section-bg-color);
+    font-size: 1.2rem;
+    padding: 20px 70px;
+    border-radius: 40px;
+    background-color: white;
+}
+
+#get-started .copyrights>*:not(span:first-of-type)::before {
+    content: '\2022';
+    padding-right: 5px;
+}
+
+#get-started a {
+    text-decoration: underline;
+}
+
+/*#endregion Get Started  */
 
 /*#endregion Main  */
 
