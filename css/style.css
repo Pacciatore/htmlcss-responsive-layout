@@ -682,6 +682,14 @@ footer a {
         margin: 0 auto;
     }
 
+    /*#region Shared  */
+    #get-started .caption,
+    footer p:first-child {
+        padding: 10px 30%;
+    }
+
+    /*#endregion Shared  */
+
     /*#region Header  */
     .menu i {
         display: none;
@@ -758,13 +766,6 @@ footer a {
     }
 
     /*#endregion About Us  */
-
-    /*#region Get Started  */
-    #get-started .caption {
-        padding: 10px 30%;
-    }
-
-    /*#endregion Get Started  */
 
 }
 
