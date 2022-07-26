@@ -565,6 +565,30 @@ footer {
 
     /*#endregion Benefits  */
 
+    /*#region About Us  */
+    #about-us .col {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #about-us .summary {
+        width: 60%;
+    }
+
+    #about-us .founder-quote {
+        width: 30%;
+    }
+
+    #about-us .founder-quote>* {
+        padding: 10px 0;
+    }
+
+    #about-us .caption {
+        font-size: 1.7rem;
+    }
+
+    /*#endregion About Us  */
+
 }
 
 
