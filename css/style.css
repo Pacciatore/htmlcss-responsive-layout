@@ -539,8 +539,8 @@ footer {
     padding: 50px 0;
 }
 
-footer p:first-child {
-    padding-bottom: 50px;
+footer p:last-of-type {
+    padding-top: 50px;
 }
 
 footer a {
@@ -557,6 +557,14 @@ footer a {
 
 /* Tablet */
 @media screen and (min-width: 768px) {
+
+    /*#region Shared  */
+    #get-started .caption,
+    footer p:first-child {
+        padding: 10px 20%;
+    }
+
+    /*#endregion Shared  */
 
     /*#region Product presentation  */
     #product-presentation .column:first-child {
@@ -659,10 +667,6 @@ footer a {
     #get-started p:last-of-type {
         font-size: 6rem;
         padding: 60px 0;
-    }
-
-    #get-started .caption {
-        padding: 10px 20%;
     }
 
     /*#endregion Get Started  */
