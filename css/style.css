@@ -500,13 +500,13 @@ footer {
 
     /*#region Benefits  */
     #benefits .card {
-        width: calc(100% / 2 - 10px);
+        width: calc(100% / 2 - 20px);
     }
 
     #benefits .col {
         flex-direction: row;
         flex-wrap: wrap;
-        column-gap: 20px;
+        justify-content: space-between;
     }
 
     /*#endregion Benefits  */
@@ -584,6 +584,13 @@ footer {
     }
 
     /*#endregion Strategic planning  */
+
+    /*#region Benefits  */
+    #benefits .card {
+        width: calc(100% / 3 - 20px);
+    }
+
+    /*#endregion Benefits  */
 
 }
 
