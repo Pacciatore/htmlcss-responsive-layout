@@ -431,6 +431,29 @@ footer {
 
     /*#endregion Strategic planning  */
 
+    /*#region Testimonials  */
+    #testimonials .card {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    #testimonials h2 {
+        font-size: 3rem;
+    }
+
+    #testimonials .feedback {
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #testimonials .feedback>* {
+        padding: 10px 0;
+    }
+
+    /*#endregion Testimonials  */
+
 }
 
 
