@@ -143,6 +143,14 @@ a {
 
 /*#endregion Imported Settings  */
 
+/*#region Variables  */
+:root {
+    --main-bg-color: #0084fd;
+    --even-section-bg-color: #9792e4;
+}
+
+/*#endregion Variables  */
+
 /*#region Utilities  */
 
 .container {
@@ -189,7 +197,7 @@ button {
 
 /*#region Header */
 header {
-    background-color: #0084fd;
+    background-color: var(--main-bg-color);
     min-height: 80px;
     line-height: 80px;
 
@@ -222,7 +230,7 @@ main {
 }
 
 section:nth-of-type(even) {
-    background-color: #9792e4;
+    background-color: var(--even-section-bg-color);
 }
 
 /*#region Product Presentation  */
@@ -241,13 +249,13 @@ section:nth-of-type(even) {
 }
 
 #product-presentation h3 {
-    color: #0084fd;
+    color: var(--main-bg-color);
 
     font-size: xx-large;
 }
 
 #product-presentation button {
-    background-color: #0084fd;
+    background-color: var(--main-bg-color);
     color: white;
     font-weight: inherit;
 
@@ -260,7 +268,7 @@ section:nth-of-type(even) {
 }
 
 #product-presentation .card>i {
-    color: #0084fd;
+    color: var(--main-bg-color);
 
     font-size: 5rem;
 }
@@ -296,7 +304,7 @@ section:nth-of-type(even) {
 }
 
 #strategic-planning i {
-    background-color: #9792e4;
+    background-color: var(--even-section-bg-color);
     padding: 20px;
     border: none;
     border-radius: 50%;
@@ -401,7 +409,6 @@ footer {
         padding: 0 100px;
     }
 
-    /* TODO */
     #strategic-planning h2 {
         font-size: xx-large;
     }
