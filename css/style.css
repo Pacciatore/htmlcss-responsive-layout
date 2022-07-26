@@ -157,6 +157,10 @@ a {
     padding: 0 20px;
 }
 
+.quoted-text {
+    quotes: "“""”";
+}
+
 /*#endregion Utilities  */
 
 /*#region Shared  */
@@ -191,8 +195,24 @@ img {
 }
 
 .card>*,
-.card>div>* {
+.card>div>*:not(#testimonials .card>div>*) {
     padding-top: 20px;
+}
+
+.quoted-text::before,
+.quoted-text::after {
+    font-size: 70px;
+    color: #fff;
+    line-height: 0;
+    vertical-align: bottom;
+}
+
+.quoted-text::before {
+    content: open-quote;
+}
+
+.quoted-text::after {
+    content: close-quote;
 }
 
 /*#endregion Shared  */
@@ -315,6 +335,53 @@ section:nth-of-type(even) {
 }
 
 /*#endregion Strategic Planning  */
+
+/*#region Testimonials  */
+
+#testimonials {
+    text-align: center;
+    padding: 0 20px;
+}
+
+#testimonials .col {
+    padding: 100px 0;
+}
+
+#testimonials .column {
+    padding: 20px 0;
+}
+
+#testimonials h3 {
+    font-weight: inherit;
+    text-transform: uppercase;
+}
+
+#testimonials h2 {
+    color: var(--even-section-bg-color);
+    font-size: xx-large;
+    line-height: 3rem;
+    padding: 20px 0;
+}
+
+#testimonials .card {
+    background-color: var(--even-section-bg-color);
+    color: white;
+}
+
+#testimonials img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#testimonials .signature {
+    font-size: larger;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*#endregion Testimonials  */
 
 /*#endregion Main  */
 
