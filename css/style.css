@@ -234,6 +234,7 @@ header {
     line-height: 80px;
 
     position: fixed;
+    z-index: 100;
 }
 
 .menu {
@@ -669,6 +670,13 @@ footer {
     }
 
     /*#endregion Benefits  */
+
+    /*#region About Us  */
+    #about-us .founder-quote {
+        width: 20%;
+    }
+
+    /*#endregion About Us  */
 
 }
 
