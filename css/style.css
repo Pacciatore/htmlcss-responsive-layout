@@ -498,6 +498,19 @@ footer {
 
     /*#endregion Testimonials  */
 
+    /*#region Benefits  */
+    #benefits .card {
+        width: calc(100% / 2 - 10px);
+    }
+
+    #benefits .col {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 20px;
+    }
+
+    /*#endregion Benefits  */
+
 }
 
 
