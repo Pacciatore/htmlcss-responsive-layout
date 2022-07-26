@@ -740,6 +740,13 @@ footer {
 
     /*#endregion About Us  */
 
+    /*#region Get Started  */
+    #get-started .caption {
+        padding: 10px 30%;
+    }
+
+    /*#endregion Get Started  */
+
 }
 
 
