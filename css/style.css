@@ -397,13 +397,32 @@ footer {
 
     #strategic-planning>.container {
         display: flex;
-        justify-content: space-between;
-
+        justify-content: space-evenly;
+        padding: 0 100px;
     }
 
     /* TODO */
     #strategic-planning h2 {
         font-size: xx-large;
+    }
+
+    #strategic-planning .column {
+        width: calc(100% / 2 - 100px);
+    }
+
+    #strategic-planning .column:nth-child(2) {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    #strategic-planning .card {
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    #strategic-planning .card>img {
+        width: 50%;
+        align-self: center;
     }
 
     /*#endregion Strategic planning  */
